@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+        <body>
+            <form action="/catalog/apartment/create" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="Enter title" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Description</label>
+      <textarea type="text" name="description" id="description" cols="30" rows="10" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Location</label>
+        <input type="text" class="form-control" id="location" name="location" placeholder="Enter Location(Ex. Miami,FL)" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">House Amenities</label>
+        <input type="text" id="houseamenities" class="form-control" name="houseamenities" placeholder="Enter" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input id="image" type="file" name="myimage" accept="image/*" autocomplete="off" required />
+      </div>
+ 
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+        </body>
+    </html>
+

@@ -1,33 +1,33 @@
 var express = require('express');
 var router = express.Router();
-
-var author_controller = require('../controller/authorController');
-
-// AUTHOR ROUTES ////
+var apartment_controller = require('../controller/apartmentController');
 
 
-//GET request form create author
-router.get('/author/create', author_controller.author_create_get);
+// apartment ROUTES ////
 
-//POST FORM create author
-router.post('/author/create',author_controller.author_create_post);
 
-//GET form to delete Author
-router.get('/author/:id/delete',author_controller.author_delete_get);
+//GET request form create apartment
+router.get('/apartment/create', apartment_controller.apartment_create_get);
 
-//POST form to delete Author
-router.post('/author/:id/delete',author_controller.author_delete_post);
+//POST FORM create apartment
+router.post('/apartment/create',apartment_controller.apartment_create_post);
 
-//GET form to update Author
-router.get('/author/:id/update',author_controller.author_update_get);
+//GET form to delete apartment
+router.get('/apartment/:id/delete',apartment_controller.apartment_delete_get);
 
-//POST form to update Author
-router.post('/author/:id/update',author_controller.author_update_post);
+//POST form to delete apartment
+router.post('/apartment/:id/delete',apartment_controller.apartment_delete_post);
 
-//GET for one author
-router.get('/author/:id',author_controller.author_details);
+//GET form to update apartment
+router.get('/apartment/:id/update',apartment_controller.apartment_update_get);
 
-//GET for all author
-router.get('/author',author_controller.author_list);
+//POST form to update apartment
+router.post('/apartment/:id/update',apartment_controller.apartment_update_post);
+
+//GET for one apartment
+router.get('/apartment/:id',apartment_controller.apartment_details);
+
+//GET for all apartment
+router.get('/apartment',apartment_controller.apartment_list);
 
 module.exports = router;
